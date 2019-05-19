@@ -1,0 +1,403 @@
+<!DOCTYPE HTML>
+<!--
+	Monochromed by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Monochromed by TEMPLATED</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body>
+
+	<!-- Header -->
+		<div id="header">
+			<div class="container">
+
+				<!-- Logo -->
+					<div id="logo">
+						<h1><a href="#">Blog de Miguel Angel Huerta</a></h1>
+						<span>Design by TEMPLATED</span>
+						<span><a href="eng/index.html">English</a></span>
+					</div>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Homepage</a></li>
+							<li class="active"><a href="RaspberryPi.html">RaspberryPi</a></li>
+							<li><a href="FirefoxOS.html">FirefoxOS</a></li>
+							<li><a href="Futbol.html">Futbol</a></li>
+							<li><a href="data.html">Data</a></li>
+						</ul>
+					</nav>
+
+			</div>
+		</div>
+	<!-- Header -->
+
+	<!-- Main -->
+		<div id="main">
+			<div class="container">
+				<div class="row">
+
+					<!-- Sidebar -->
+						<div id="sidebar" class="4u">
+							<section>
+								<header>
+									<h2>Enlaces de interés</h2>
+									<span class="byline">Información para la instalación de Owncloud en Raspberry Pi model B</span>
+								</header>
+
+								<ul class="default">
+									<li><a href="http://www.ubuntufacil.com/2014/02/primeros-pasos-con-raspberry-pi-instalacion-y-configuracion-de-raspbian/">Instalación de Raspbian.</a></li>
+									<li><a href="http://elpregunton.es/como-configurar-direccion-ip-fija-linux-ubuntu/">Asignar ip fija a la raspberry pi</a></li>
+									<li><a href="http://sharadchhetri.com/2014/07/21/setup-self-signed-ssl-certificate-owncloud-6-ubuntu-14-04-lts-server/">Generar certificados para el uso de SSL</a></li>
+									<li><a href="http://es.wikihow.com/hacer-un-servidor-web-Raspberry-Pi">Configuración de servidor básico</a></li>
+									<li><a href="http://manuelpereiragonzalez.blogspot.com.es/2014/07/como-los-ficheros-de-la-raspberry-pi.html">Configuración de samba</a></li>
+									<li><a href="http://www.pacorabadan.com/?p=937">Instalación de owncloud</a></li>
+									<li><a href="http://www.pacorabadan.com/?p=917">Afinar la instalación</a></li>
+									<li><a href="http://lignux.com/tutorial-para-instalar-no-ip-en-gnulinux/">Asignación de nombre de dominio gratuito</a></li>
+									<li><a href="https://docs.services.mozilla.com/howtos/run-sync-1.5.html">Configuración de servidor Mozilla Sync para sincronizar contraseñas, pestañas,etc... del Firefox</a></li>
+									<li><a href="http://www.ncalexander.net/blog/2014/07/05/how-to-connect-firefox-for-android-to-self-hosted-services/">Configuración de Firefox Android</a></li>
+								</ul>
+							</section>
+						</div>
+					<!-- Sidebar -->
+
+					<!-- Content -->
+						<div id="content" class="8u skel-cell-important">
+							<section>
+								<header>
+									<h2>RaspberryPi</h2>
+									<span class="byline">Jugueteando con la raspberry pi model B</span>
+								</header>
+								<p><a href="#" class="image full"><img src="images/raspberry.jpg" alt=""></a></p>
+								<p> Mi principal objetivo era crearme una nube privada con la que poder sincronizar mi móvil sin tener que depender y así tener una (falsa) sensación de que Google me espía algo menos...
+								    Existe un software open source formidable que me permite crear esto facilmente llamado Owncloud, y con el cual puedes tener archivos, contactos, calendario, notas y tareas sincronizadas con tu propio servidor.
+										Esto suena perfecto para desvicularte lo más posible de Google así que estos son los pasos que seguí</p>
+										<ul>
+												<li>
+													insetar sd card</li>
+												<li>
+													lsblk para listar los volumenes conectados (normalmente la tarjeta ser&aacute; sdb si no hay nada m&aacute;s conectado).</li>
+												<li>
+													descargasr la ultima version de raspbian</li>
+												<li>
+													grabar la imagen en la sd</li>
+												<li>
+													sudo dd if=&lt;ruta-a-la-imagen&gt;&lt;nombre-de-la-imagen&gt; of=/dev/&lt;dispositivo-sd&gt;</li>
+												<li>
+													acordaros de descomprimir el zip y que sea el archivo .img el que flaseeis</li>
+											</ul>
+											<p>
+												<br />
+												recibireis un aviso de que se he pasado los 3.3GB aprox.<br />
+												<br />
+												<br />
+												<br />
+												Ahora solo queda encender la raspberry y hacer las tareas iniciales, las m&aacute;s importantes expandir la partici&oacute;n a toda la memoria disponible, cambiar la contrase&ntilde;a y habilitar el ssh para ya poder hacerlo todo de manera remota.</p>
+											<ul>
+												<li>
+													asigna ip fija</li>
+											</ul>
+											<p>
+												<br />
+												$ sudo nano /etc/network/interfaces<br />
+												<br />
+												# Configuraci&oacute;n de direcci&oacute;n IP fija para el interfaz eth0<br />
+												auto eth0<br />
+												iface eth0 inet static<br />
+												address 192.168.1.50<br />
+												netmask 255.255.255.0<br />
+												network 192.168.1.0<br />
+												broadcast 192.168.1.255<br />
+												gateway 192.168.1.1<br />
+												<br />
+												&nbsp;sudo /etc/init.d/networking restart<br />
+												&nbsp;<br />
+												$ sudo ifconfig eth0 down<br />
+												$ sudo ifconfig eth0 up<br />
+												&nbsp;</p>
+											<ul>
+												<li>
+													Instalar el cliente no-ip para que actualice automaticamente mi IP</li>
+											</ul>
+											<p>
+												&nbsp;&nbsp;&nbsp; cd /usr/local/src/<br />
+												&nbsp;&nbsp;&nbsp; wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz<br />
+												&nbsp;&nbsp;&nbsp; tar xf noip-duc-linux.tar.gz<br />
+												&nbsp;&nbsp;&nbsp; cd noip-2.1.9-1/<br />
+												&nbsp;&nbsp;&nbsp; make install</p>
+											<ul>
+												<li>
+													Se pueden utilizar los certificados creados por el servidor apache2</li>
+											</ul>
+											<p>
+												<br />
+												a2ensite default-ssl<br />
+												service apache2 restart</p>
+											<ul>
+												<li>
+													O bien crearlo uno mismo</li>
+											</ul>
+											<p>
+												Crear los certificados<br />
+												<br />
+												sudo apt-get install openssl<br />
+												sudo a2enmod ssl<br />
+												sudo a2enmod rewrite<br />
+												service apache2 restart<br />
+												<br />
+												<br />
+												Generar Entidad Certificadora<br />
+												sudo openssl req -new &gt; new.ssl.csr<br />
+												<br />
+												Generar la el certificado<br />
+												<br />
+												sudo openssl rsa -in privkey.pem -out new.cert.key<br />
+												<br />
+												Firmar el certificado<br />
+												<br />
+												sudo openssl x509 -in new.ssl.csr -out new.cert.cert -req -signkey new.cert.key -days 3650<br />
+												<br />
+												Copiar los certificados a la carpeta por defecto<br />
+												<br />
+												sudo cp new.cert.cert /etc/ssl/certs/server.crt<br />
+												sudo cp new.cert.key /etc/ssl/private/server.key<br />
+												<br />
+												Asegurarse de que server.key tiene s&oacute;lo permisos de lectura.</p>
+											<ul>
+												<li>
+													Instalar owncloud</li>
+											</ul>
+											<p>
+												a&ntilde;adir repo<br />
+												<br />
+												echo &#39;deb http://download.opensuse.org/repositories/isv:/ownCloud:/community/Debian_8.0/ /&#39; &gt;&gt; /etc/apt/sources.list.d/owncloud.list<br />
+												<br />
+												<br />
+												cd /tmp<br />
+												wget http://download.opensuse.org/repositories/isv:ownCloud:community/Debian_8.0/Release.key<br />
+												apt-key add - &lt; Release.key<br />
+												<br />
+												apt-get update<br />
+												apt-get install owncloud<br />
+												<br />
+												Crear la tabla y el usuario para owncloud<br />
+												<br />
+												mysql --defaults-file=/etc/mysql/debian.cnf<br />
+												<br />
+												CREATE DATABASE owncloud;<br />
+												CREATE USER owncloud@localhost IDENTIFIED BY &#39;mysecurepassword&#39;;<br />
+												GRANT ALL PRIVILEGES ON owncloud.* TO owncloud@localhost;<br />
+												flush privileges;<br />
+												quit<br />
+												<br />
+												mkdir /var/owncloud<br />
+												chown www-data:www-data /var/owncloud<br />
+												chmod 750 /var/owncloud<br />
+												&nbsp;</p>
+											<p>
+												Entrar en la p&aacute;gina por medio del navegador y elegir un nombre de usuario y una contrase&ntilde;a</p>
+											<p>
+												<br />
+												No es buena idea tener archivos privados en el archivo raiz de la web, yo lo cambio a /var/owncloud<br />
+												<br />
+												Por defecto owncloud usa sqllite. Como hemos creado las tablas para mySQL y es una soluci&oacute;n m&aacute;s robusta lo elegimos tambi&eacute;n<br />
+												<br />
+												&nbsp;&nbsp;&nbsp; Username:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; owncloud<br />
+												&nbsp;&nbsp;&nbsp; Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The password that you have choosen for the database.<br />
+												&nbsp;&nbsp;&nbsp; Database name: owncloud<br />
+												&nbsp;&nbsp;&nbsp; Hostname:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; localhost</p>
+											<p>
+												<br />
+												&nbsp;&nbsp; &nbsp;<br />
+												Si no hemos elegido usar los certificados del servidor por defecto, redirigir las peticiones al puerto 443:<br />
+												<br />
+												nano /etc/apache2/conf-enabled/owncloud.conf<br />
+												<br />
+												add<br />
+												<br />
+												#Listen 443<br />
+												#uncomment and change the above only for other ports<br />
+												&nbsp;<br />
+												&nbsp;&lt;VirtualHost 192.168.0.16:80&gt;<br />
+												RewriteEngine on<br />
+												ReWriteCond %{SERVER_PORT} !^443$<br />
+												RewriteRule ^/(.*) https://%{HTTP_HOST}/$1 [NC,R,L]<br />
+												&lt;/VirtualHost&gt;<br />
+												&nbsp;<br />
+												&lt;VirtualHost 192.168.0.16:443&gt;<br />
+												SSLEngine on<br />
+												SSLCertificateFile /etc/apache2/ssl/privkey.pem<br />
+												SSLCertificateKeyFile /etc/apache2/ssl/private/server.key<br />
+												DocumentRoot /var/www/owncloud/<br />
+												&nbsp;<br />
+												Alias /owncloud &quot;/var/www/owncloud/&quot;<br />
+												&lt;Directory &quot;/var/www/owncloud&quot;&gt;<br />
+												&nbsp;&nbsp;&nbsp; Options +FollowSymLinks<br />
+												&nbsp;&nbsp;&nbsp; AllowOverride All<br />
+												&nbsp;<br />
+												&nbsp;&nbsp;&nbsp; &lt;IfModule mod_dav.c&gt;<br />
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dav off<br />
+												&nbsp;&nbsp;&nbsp; &lt;/IfModule&gt;<br />
+												&nbsp;<br />
+												&nbsp;&nbsp;&nbsp; SetEnv HOME /var/www/owncloud<br />
+												&nbsp;&nbsp;&nbsp; SetEnv HTTP_HOME /var/www/owncloud<br />
+												&lt;/Directory&gt;<br />
+												&nbsp;<br />
+												&lt;Directory &quot;/var/www/owncloud/data/&quot;&gt;<br />
+												&nbsp; # just in case if .htaccess gets disabled<br />
+												&nbsp; Require all denied<br />
+												&lt;/Directory&gt;<br />
+												&lt;/VirtualHost&gt;<br />
+												<br />
+												#service apache2 restart<br />
+												<br />
+												Forzar que todas las conexiones sean https:<br />
+												nano /etc/apache2/conf-enabled/owncloud.conf<br />
+												<br />
+												add<br />
+												&nbsp;<br />
+												<br />
+												&lt;VirtualHost *:443&gt;<br />
+												&nbsp;&nbsp; ServerName cloud.owncloud.com<br />
+												&nbsp;&nbsp; Header always add Strict-Transport-Security &quot;max-age=15768000&quot;<br />
+												&lt;/VirtualHost&gt;<br />
+												<br />
+												<br />
+												A&ntilde;adir el dominio de confianza<br />
+												sudo nano /var/www/owncloud/config/config.php<br />
+												<br />
+												4<br />
+												5<br />
+												&nbsp;&nbsp; &nbsp;<br />
+												&#39;trusted_domains&#39; =&gt;<br />
+												array (<br />
+												0 =&gt; &#39;192.168.0.16&#39;,<br />
+												1 =&gt; &#39;nombre&#39;,<br />
+												),<br />
+												<br />
+												<br />
+												A&ntilde;adir memcached a php<br />
+												sudo apt-get install php-apc<br />
+												sudo nano /var/www/owncloud/config/config.php<br />
+												<br />
+												<br />
+												a&ntilde;adir<br />
+												&#39;memcache.local&#39; =&gt; &#39;\OC\Memcache\APC&#39;,<br />
+												<br />
+												Activar tarea cron en lugar de Ajax para agilizar el frontend<br />
+												Activate Owncloud Cronjobs<br />
+												# crontab -u www-data -e<br />
+												*/15&nbsp; *&nbsp; *&nbsp; *&nbsp; * php -f /var/www/owncloud/cron.php<br />
+												<br />
+												<br />
+												Sincronizar contactos<br />
+												<br />
+												https://&lt;yourAccount&gt;/remote.php/carddav/addressbooks/&lt;username&gt;/contactos<br />
+												<br />
+												Sincronizar calendario<br />
+												<br />
+												https://ADDRESS/remote.php/caldav/calendars/USERNAME/CALENDARNAME<br />
+												&nbsp;</p>
+										<li><a href="http://www.ubuntufacil.com/2014/02/primeros-pasos-con-raspberry-pi-instalacion-y-configuracion-de-raspbian/">Instalación de Raspbian.</a></li>
+										<li><a href="http://elpregunton.es/como-configurar-direccion-ip-fija-linux-ubuntu/">Asignar ip fija a la raspberry pi</a></li>
+										<li><a href="http://sharadchhetri.com/2014/07/21/setup-self-signed-ssl-certificate-owncloud-6-ubuntu-14-04-lts-server/">Generar certificados para el uso de SSL</a></li>
+										<li><a href="http://es.wikihow.com/hacer-un-servidor-web-Raspberry-Pi">Configuración de servidor básico</a></li>
+										<li><a href="http://manuelpereiragonzalez.blogspot.com.es/2014/07/como-los-ficheros-de-la-raspberry-pi.html">Configuración de samba</a></li>
+										<li><a href="http://www.pacorabadan.com/?p=937">Instalación de owncloud</a></li>
+										<li><a href="http://www.pacorabadan.com/?p=917">Afinar la instalación</a></li>
+										<li><a href="http://lignux.com/tutorial-para-instalar-no-ip-en-gnulinux/">Asignación de nombre de dominio gratuito</a></li>
+										<li><a href="https://docs.services.mozilla.com/howtos/run-sync-1.5.html">Configuración de servidor Mozilla Sync para sincronizar contraseñas, pestañas,etc... del Firefox</a></li>
+										<li><a href="http://www.ncalexander.net/blog/2014/07/05/how-to-connect-firefox-for-android-to-self-hosted-services/">Configuración de Firefox Android</a></li>
+
+							</section>
+						</div>
+					<!-- /Content -->
+
+				</div>
+
+			</div>
+		</div>
+	<!-- Main -->
+
+	<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="3u">
+						<section>
+							<ul class="style1">
+								<li><img src="images/pics05.jpg" width="78" height="78" alt="">
+									<p>Proyecto KDE </p>
+									<a href="https://www.kde.org/">kde.org</a>
+									<p class="posted">August 11, 2014  |  (10 )  Comments</p>
+								</li>
+							</ul>
+						</section>
+					</div>
+					<div class="3u">
+						<section>
+							<ul class="style1">
+								<li class="first"><img src="images/debian.jpg" width="78" height="78" alt="">
+									<p>Debian</p>
+									<a href="https://www.debian.org/index.es.html">debian</a>
+									<p class="posted">August 11, 2014  |  (10 )  Comments</p>
+								</li>
+							</ul>
+						</section>
+					</div>
+					<div class="6u">
+						<section>
+							<header>
+								<h2>Informacion de contacto</h2>
+							</header>
+							<p>mahdsip@gmail.com</p>
+							<ul class="default">
+								<li><a href="https://github.com/mahdsip">Perfil de github</a></li>
+								<li><a href="https://www.swe.siemens.com/spain/web/es/healthcare/med_innova/Pages/amivital.aspx">Proyecto AmiVital</a></li>
+								<li><a href="http://www.oasis-project.eu/">Proyecto OASIS</a></li>
+								<li><a href="http://www.fiware.org/">proyecto Fiware.</a></li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- Footer -->
+
+	<!-- Copyright -->
+		<div id="copyright">
+			<div class="container">
+				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+			</div>
+		</div>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134684500-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-134684500-1');
+		</script>
+
+	</body>
+</html>
