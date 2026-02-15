@@ -1,0 +1,6 @@
+# Kiro IDE files
+.kiro/
+.vscode/
+
+# macOS files
+.DS_Store
