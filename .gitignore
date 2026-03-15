@@ -4,3 +4,17 @@
 
 # macOS files
 .DS_Store
+check_links.py
+
+venv/
+fix_links.py
+consolidate_resources.py
+CONSOLIDATION_SUMMARY.md
+fix_sidebar.py
+replace_titles.py
+reorganize_eng_pages.py
+reorganize_english.py
+translate_eng_pages.py
+create_new_pages.py
+extract_content.py
+AI_DATA_REORGANIZATION_SUMMARY.md
