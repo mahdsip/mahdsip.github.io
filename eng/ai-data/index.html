@@ -8,8 +8,8 @@
 	<head>
 		<title>AI & Data - Miguel Angel Huerta's Blog</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
+		<meta name="description" content="Miguel Angel Huerta's notes and experience on analytics, data science, machine learning and data-oriented software architecture." />
+		<meta name="keywords" content="AI, data, analytics, machine learning, data science, R, FHIR, ETL" />
 		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 		<!--[if lte IE 8]><script src="../../js/html5shiv.js"></script><![endif]-->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -39,7 +39,7 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="../../index.html">Homepage</a></li>
+							<li><a href="../index.html">Homepage</a></li>
 							<li><a href="../hardware-projects/index.html">Hardware Projects</a></li>
 							<li><a href="../software-projects/index.html">Software Projects</a></li>
 							<li class="active"><a href="index.html">AI & Data</a></li>
@@ -56,31 +56,88 @@
 			<div class="container">
 				<header>
 					<h2>AI & Data</h2>
-					<span class="byline">Artificial Intelligence, Big Data and Data Analysis</span>
+					<span class="byline">Applied analytics, data science and data-oriented software</span>
 				</header>
 				<div class="row">
-					<div class="4u">
+					<div class="3u">
 						<section>
-							<a href="data.html" class="image full"><img src="../../images/pics02.jpg" alt="" /></a>
+							<a href="data.html" class="image full"><img src="../../images/data/path.jpeg" alt="" /></a>
 							<h3>Data</h3>
-							<p>Reporting, analysis and data mining</p>
+							<p>Reporting, KPIs, data warehousing and the path from raw data to decisions.</p>
 							<a href="data.html" class="button">Read More</a>
 						</section>
 					</div>
-					<div class="4u">
+					<div class="3u">
 						<section>
 							<a href="data-science.html" class="image full"><img src="../../images/pics13.jpg" alt="" /></a>
-							<h3>Data Science & Machine Learning</h3>
-							<p>Johns Hopkins Specialization and analysis tools</p>
+							<h3>Data Science</h3>
+							<p>R, data cleaning, exploratory analysis, statistical inference and specialization notes.</p>
 							<a href="data-science.html" class="button">Read More</a>
+						</section>
+					</div>
+					<div class="3u">
+						<section>
+							<a href="machine-learning.html" class="image full"><img src="../../images/data/sem1.jpeg" alt="" /></a>
+							<h3>Machine Learning & AI</h3>
+							<p>Classification, regression, clustering and how to land models on real-world data.</p>
+							<a href="machine-learning.html" class="button">Read More</a>
+						</section>
+					</div>
+					<div class="3u">
+						<section>
+							<a href="estilos.html" class="image full"><img src="../../images/data/soa.jpeg" alt="" /></a>
+							<h3>Software & Architecture</h3>
+							<p>Services, integration and architectural styles that make data usable in practice.</p>
+							<a href="estilos.html" class="button">Read More</a>
+						</section>
+					</div>
+				</div>
+				<div class="divider">&nbsp;</div>
+				<div class="row">
+					<div class="8u skel-cell-important">
+						<section id="content">
+							<header>
+								<h2>An end-to-end view</h2>
+								<span class="byline">From capture and cleaning to analysis, modeling and production use</span>
+							</header>
+							<p>This section brings together the part of my work that is most focused on turning data into decisions. It covers operational and analytical reporting, data science, machine learning, and the software architecture needed to make those capabilities reliable.</p>
+							<p>Most of the material comes from my professional work on medical data exploitation, from my Master's degree in Information and Knowledge Management, and from the Johns Hopkins Data Science specialization. The goal is to provide a clear map of both learning and practical delivery.</p>
+							<ul class="default">
+								<li>Acquisition and integration: databases, ETL, data cleaning, heterogeneous sources and clinical data.</li>
+								<li>Descriptive analytics: operational reporting, dashboards, scorecards, multidimensional analysis and data warehousing.</li>
+								<li>Advanced analytics: statistical inference, regression, clustering, profiling and supervised models.</li>
+								<li>Value delivery: reproducible notebooks, visualization, sample apps and APIs or services to share results.</li>
+							</ul>
+							<a href="data-science.html" class="button">Explore Data Science</a>
+							<a href="machine-learning.html" class="button">Explore Machine Learning</a>
 						</section>
 					</div>
 					<div class="4u">
 						<section>
-							<a href="software-engineer.html" class="image full"><img src="../../images/pics01.jpg" alt="" /></a>
-							<h3>Software Engineer</h3>
-							<p>Architectural styles and technologies</p>
-							<a href="software-engineer.html" class="button">Read More</a>
+							<header>
+								<h2>Featured Material</h2>
+							</header>
+							<ul class="default">
+								<li><a href="datascience/Curso_2_R_Programming.html">R programming notes and exercises</a></li>
+								<li><a href="datascience/Curso_3_Getting_and_Cleaning_Data.html">Getting and Cleaning Data</a></li>
+								<li><a href="datascience/Curso_4_Exploratory_Data_Analysis.html">Exploratory data analysis with R</a></li>
+								<li><a href="datascience/Curso_5_Reproducible_research.html">Reproducible research</a></li>
+								<li><a href="datascience/Curso_6_Statistical_Inference.html">Statistical inference</a></li>
+								<li><a href="datascience/Extra3_FHIR.html">FHIR and healthcare data</a></li>
+								<li><a href="https://github.com/mahdsip/DataScience">Data Science repository on GitHub</a></li>
+							</ul>
+						</section>
+						<section>
+							<header>
+								<h2>Related Architecture</h2>
+							</header>
+							<ul class="default">
+								<li><a href="soa.html">SOA</a></li>
+								<li><a href="rest.html">REST</a></li>
+								<li><a href="middleware.html">Middleware</a></li>
+								<li><a href="sws.html">Semantic Web Services</a></li>
+								<li><a href="estilos.html">Software engineering overview</a></li>
+							</ul>
 						</section>
 					</div>
 				</div>
