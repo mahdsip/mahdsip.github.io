@@ -6,10 +6,10 @@
 -->
 <html>
 	<head>
-		<title>Data Science & Machine Learning - Miguel Angel Huerta's Blog</title>
+		<title>Data Science - Miguel Angel Huerta's Blog</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
+		<meta name="description" content="Data Science notes, Maths foundations, Tabular Data practice and Johns Hopkins material from Miguel Angel Huerta." />
+		<meta name="keywords" content="data science, maths, tabular data, R, johns hopkins, machine learning" />
 		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 		<!--[if lte IE 8]><script src="../../js/html5shiv.js"></script><![endif]-->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -31,16 +31,15 @@
 
 				<!-- Logo -->
 					<div id="logo">
-						<h1><a href="../../index.html">Miguel Angel Huerta's Blog</a></h1>
+						<h1><a href="../index.html">Miguel Angel Huerta's Blog</a></h1>
 						<span>Design by TEMPLATED</span>
 						<span><a href="../../ai-data/data-science.html">Español</a></span>
-
 					</div>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="../../index.html">Homepage</a></li>
+							<li><a href="../index.html">Homepage</a></li>
 							<li><a href="../hardware-projects/index.html">Hardware Projects</a></li>
 							<li><a href="../software-projects/index.html">Software Projects</a></li>
 							<li class="active"><a href="index.html">AI & Data</a></li>
@@ -61,84 +60,108 @@
 						<div id="sidebar" class="4u">
 							<section>
 								<header>
+									<h2>Data Science</h2>
+								</header>
+								<ul class="default">
+									<li><a href="#maths">Maths</a></li>
+									<li><a href="#lifecycle">Data Science life cycle</a></li>
+									<li><a href="#tabular-data">Tabular Data</a></li>
+									<li><a href="#johns-hopkins">Johns Hopkins content</a></li>
+								</ul>
+							</section>
+							<section>
+								<header>
 									<h2>Other Sections</h2>
 								</header>
 								<ul class="default">
 									<li><a href="data.html">Data</a></li>
-									<li><a href="software-engineer.html">Software Engineer</a></li>
-							  </ul>
+									<li><a href="machine-learning.html">Machine Learning & AI</a></li>
+									<li><a href="estilos.html">Software Engineer</a></li>
+								</ul>
 							</section>
 						</div>
 					<!-- Sidebar -->
-
 
 					<!-- Content -->
 						<div id="content" class="8u skel-cell-important">
 							<section>
 								<header>
-									<h2>Data Science & Machine Learning</h2>
-
+									<h2>Data Science</h2>
+									<span class="byline">Maths foundations, Data Science life cycle, Tabular Data practice and course notes</span>
 								</header>
 								<p><a href="#" class="image full"><img src="../../images/pics02.jpg" alt=""></a></p>
+								<p>This page is the main entry point for the Data Science material in the site. It now groups four complementary tracks: the Maths base behind machine learning, a Data Science life cycle path built around tabular workflows, practical work around Tabular Data, and the Johns Hopkins content that I already had published.</p>
+								<p>That structure reflects how I actually approach data work: first understand the mathematical ideas, then organize the end-to-end workflow on data, then solve real problems on structured datasets, and finally deepen the practice with course notes, exercises and reproducible material.</p>
 
-									<p style="margin-bottom: 0cm; line-height: 100%;"><b>Data Science Specialization from Johns Hopkins Public Health University</b></p>
-									<p >&nbsp;</p>
-									<p style="margin-bottom: 0cm; line-height: 100%;">Afte one year of free time dedicated, finally in October 2018 I could finish the 9 course Data Science specialization from Johns Hopkins Public Health University. Bellow you can find my notes, assigments and applications that I developed during the courses, and a link to the final capstone project
-									</p>
-									<a name="Cgithublink" href="https://github.com/mahdsip/DataScience"><b>Everything available in my Github space</b></a>
-									<ul class="default">
-										<li><a name="Course2" href="../R_Programming_Course_Notes.html"><b>Course 2 R Programming</b></a></li>
-										<p style="margin-bottom: 0cm; line-height: 100%;">Basic notes to start programming in R and its habitual data types.
-										</p>
-									<li><a name="Curso2.1" href="datascience/pollutantAssignment1.html">Course2.- Assigment1 (Function creation and CSV reading)</a></li>
-									<li><a name="Curso2.2" href="datascience/cacheObjects.html">Course2.- Assigment2 (Create list object with getters y setters)</a></li>
-									<li><a name="Curso2.3" href="datascience/HospitalQuality.html">Course2.- Assigment3 (show US hospital quality indicators)</a></li>
-									<li><a name="Curso2.4" href="https://mahdsip.shinyapps.io/HospitalQualityUS/">Course2.- Assigment3 application</a></li>
-									<li><a name="Curso2.5" href="https://leanpub.com/rprogramming">Course2.- Link to online book R Programming for DataScience from Roger D.Peng</a></li>
+								<p id="maths" style="margin-bottom: 0cm; line-height: 100%;"><b>Maths</b></p>
+								<p style="margin-bottom: 0cm; line-height: 100%;">A structured path through the mathematical foundations that appear again and again in machine learning for tabular problems: vectors, matrices, transformations, probability, statistics, likelihood, loss functions, Bayes and information theory.</p>
+								<ul class="default">
+									<li><a href="maths.html">Maths foundations for machine learning</a></li>
+								</ul>
+
+								<p id="lifecycle" style="margin-bottom: 0cm; line-height: 100%;"><b>Data Science life cycle</b></p>
+								<p style="margin-bottom: 0cm; line-height: 100%;">This block summarizes a practical sequence for tabular-data projects: data preparation, enrichment, feature engineering, missing values, encoding, evaluation, tuning and model selection. The notes come from three PDFs in the <code>NPL</code> bundle and remain linked in their original format.</p>
+								<ul class="default">
+									<li><a href="data-science-life-cycle.html">Data Science life cycle</a></li>
+								</ul>
+
+								<p id="tabular-data" style="margin-bottom: 0cm; line-height: 100%;"><b>Tabular Data</b></p>
+								<p style="margin-bottom: 0cm; line-height: 100%;">Most business and healthcare analytics problems start with structured tables, not with flashy demos. This subsection focuses on data preparation, missing values, categorical variables, feature engineering, evaluation and the practical tooling needed to make tabular models reliable.</p>
+								<ul class="default">
+									<li><a href="tabular-data.html">Working with Tabular Data</a></li>
+									<li><a href="datascience/Curso_3_Getting_and_Cleaning_Data.html">Getting and Cleaning Data</a></li>
+									<li><a href="datascience/Dplyr2.html">dplyr exercises</a></li>
+									<li><a href="datascience/tidyr.html">tidyr exercises</a></li>
+								</ul>
+
+								<p id="johns-hopkins" style="margin-bottom: 0cm; line-height: 100%;"><b>Johns Hopkins content</b></p>
+								<p style="margin-bottom: 0cm; line-height: 100%;">After about a year of spare-time work, I completed the Johns Hopkins Data Science specialization in October 2018. Below you can find my notes, assignments, small applications and related references. The specialization includes nine courses plus the final capstone project.</p>
+								<p><a name="Cgithublink" href="https://github.com/mahdsip/DataScience"><b>Everything is also available in my GitHub space</b></a></p>
+								<ul class="default">
+									<li><a name="Course2" href="../R_Programming_Course_Notes.html"><b>Course 2 R Programming</b></a></li>
+									<p style="margin-bottom: 0cm; line-height: 100%;">Basic notes to start programming in R and understanding its most common data types.</p>
+									<li><a name="Course2.1" href="datascience/pollutantAssignment1.html">Course 2 - Assignment 1 (Function creation and CSV reading)</a></li>
+									<li><a name="Course2.2" href="datascience/cacheObjects.html">Course 2 - Assignment 2 (Create a list object with getters and setters)</a></li>
+									<li><a name="Course2.3" href="datascience/HospitalQuality.html">Course 2 - Assignment 3 (Show US hospital quality indicators)</a></li>
+									<li><a name="Course2.4" href="https://mahdsip.shinyapps.io/HospitalQualityUS/">Course 2 - Assignment 3 application</a></li>
+									<li><a name="Course2.5" href="https://leanpub.com/rprogramming">Course 2 - R Programming for Data Science by Roger D. Peng</a></li>
 									<li><a name="Course3" href="../Getting_and_Cleaning_Data_Course_Notes.html"><b>Course 3 Getting and Cleaning Data</b></a></li>
-									<p style="margin-bottom: 0cm; line-height: 100%;">Tools to adquire data like webscrapping, database conections or file reading as well as data cleaning with Tidyr and Dplyr. (Data Wrangling)
-									</p>
-									<li><a name="Course3.1" href="datascience/run_analysis.html">Course3.- Assigment 1 (Create a tidy dataset from two different source files)</a></li>
-									<li><a name="Course3.2" href="datascience/dplyr.html">Course3.- Assigment 2 (Using dplyr library with pollution sensor data from Chicago)</a></li>
-									<li><a name="Course3.3" href="https://vita.had.co.nz/papers/tidy-data.pdf">Course3.- Reference PDF about Tidy Data from Hadley Wickham</a></li>
-									<a name="Course3.1Extra" href="datascience/Extra3_bbdd.html">Course3.- Extra1 (DataBase connection with ODBC,Oracle and JDBC)</a></li>
-									<li><a name="Course3.2Extra" href="datascience/Extra3_FHIR.html">Course3.- Extra2 (Using of RonFHIR library for interacting with FHIR servers)</a></li>
-									<li><a name="Course3.3Extra" href="datascience/Extra3_Datascrapping.html">Course3.- Extra 3 (WebScrapping from surgery waiting list Madrid public hospitals website)</a></li>
-									<li><a name="Course3.4Extra" href="datascience/Dplyr2.html">Course3.- Extra4 (DPlyr exercises Select,Filter,Arrange,Summarize,Group_by)</a></li>
-									<li><a name="Course3.5Extra" href="datascience/tidyr.html">Course3.- Extra 5 (Tdyr exercise to tidy datasets)</a></li>
+									<p style="margin-bottom: 0cm; line-height: 100%;">Tools to acquire data through web scraping, database connections or file reading, together with data cleaning using Tidyr and dplyr.</p>
+									<li><a name="Course3.1" href="datascience/run_analysis.html">Course 3 - Assignment 1 (Create a tidy dataset from two different source files)</a></li>
+									<li><a name="Course3.2" href="datascience/dplyr.html">Course 3 - Assignment 2 (Use dplyr with pollution sensor data from Chicago)</a></li>
+									<li><a name="Course3.3" href="https://vita.had.co.nz/papers/tidy-data.pdf">Course 3 - Tidy Data paper by Hadley Wickham</a></li>
+									<li><a name="Course3.1Extra" href="datascience/Extra3_bbdd.html">Course 3 - Extra 1 (Database connections with ODBC, Oracle and JDBC)</a></li>
+									<li><a name="Course3.2Extra" href="datascience/Extra3_FHIR.html">Course 3 - Extra 2 (Using RonFHIR to interact with FHIR servers)</a></li>
+									<li><a name="Course3.3Extra" href="datascience/Extra3_Datascrapping.html">Course 3 - Extra 3 (Web scraping Madrid public hospital waiting lists)</a></li>
+									<li><a name="Course3.4Extra" href="datascience/Dplyr2.html">Course 3 - Extra 4 (dplyr exercises: select, filter, arrange, summarize, group_by)</a></li>
+									<li><a name="Course3.5Extra" href="datascience/tidyr.html">Course 3 - Extra 5 (tidyr exercises to tidy datasets)</a></li>
 									<li><a name="Course4" href="../Exploratory_Data_Analysis_Course_Notes.html"><b>Course 4 Exploratory Data Analysis</b></a></li>
-										<p style="margin-bottom: 0cm; line-height: 100%;">Ggplot2 habitual graphs to perform an Exploratory Data Analysis.
-										</p>
-										<li><a name="Course4.1" href="datascience/ElectricPowerConsumptionAssigment1.html">Course4.- Assigment 1 (Create exploratory graphs for a house power consumption during 4 years)</a></li>
-										<li><a name="Course4.2" href="datascience/Assigment2FineParticulate.html">Course4.- Assigment 2 (Create exploratory graphs for US Fine Particule Emissions 1999-2008)</a></li>
-										<li><a name="Course4.1Extra" href="datascience/SmartphoneSensor.html">Course4.- Extra1 (Using Samsung sensor data to clustering types of movements)</a></li>
-										<li><a name="Course4.2Extra" href="datascience/PollutionData.html">Course4.- Extra 2 (Exploratory Analysis in Pollution US)</a></li>
-										<li><a name="Course5" href="../Reproducible_Research_Course_Notes.html"><b>Course 5 Reproducible Research</b></a></li>
-									  <p style="margin-bottom: 0cm; line-height: 100%;">Necessary stepts to make your studies reproducible.
-										</p>
-										<li><a name="Course5.1" href="datascience/PA1_template.html">Course5.- Assigment 1 (Make use of knitr library to publish and share results)</a></li>
-										<li><a name="Course5.2" href="http://rpubs.com/mahdsip/379902">Course5.- Assigment 2 (Using RPubs for our publications)</a></li>
-										<li><a name="Curso6" href="../Statistical_Inference_Course_Notes.html"><b>Course 6 Statistical Inference</b></a></li>
-										<p style="margin-bottom: 0cm; line-height: 100%;">Main terms regarding statistics and probability for Hyphothesis multiple-testing.
-										</p>
-										<li><a name="Course6.1" href="datascience/Simultion_Example.html">Course6.- Assigment 1 (Comparison between mean and variance of the sample and the teorical population from exponential distribution)</a></li>
-										<li><a name="Course6.2" href="datascience/Basic_Inferential_Data.html">Course6.- Assigment 2 (Hypothesis testing between two supplements for tooth growth)</a></li>
-										<li><a name="Curso7" href="../Regression_Models_Course_Notes.html"><b>Course 7 Regression Models</b></a></li>
-										<p style="margin-bottom: 0cm; line-height: 100%;">Most common GLM models: lineals,binomials and Poisson.
-										</p>
-									</ul>
-								<p >&nbsp;</p>
-								<p >&nbsp;</p>
-								<p style="margin-bottom: 0cm; line-height: 100%;">
+									<p style="margin-bottom: 0cm; line-height: 100%;">Typical ggplot2 visualizations and exploratory techniques for understanding a dataset before modeling.</p>
+									<li><a name="Course4.1" href="datascience/ElectricPowerConsumptionAssigment1.html">Course 4 - Assignment 1 (Exploratory graphs for household power consumption)</a></li>
+									<li><a name="Course4.2" href="datascience/Assigment2FineParticulate.html">Course 4 - Assignment 2 (Exploratory graphs for US fine particulate emissions)</a></li>
+									<li><a name="Course4.1Extra" href="datascience/SmartphoneSensor.html">Course 4 - Extra 1 (Samsung sensor data for movement clustering)</a></li>
+									<li><a name="Course4.2Extra" href="datascience/PollutionData.html">Course 4 - Extra 2 (Exploratory analysis for US pollution data)</a></li>
+									<li><a name="Course5" href="../Reproducible_Research_Course_Notes.html"><b>Course 5 Reproducible Research</b></a></li>
+									<p style="margin-bottom: 0cm; line-height: 100%;">The main steps needed to make studies and publications reproducible.</p>
+									<li><a name="Course5.1" href="datascience/PA1_template.html">Course 5 - Assignment 1 (Use knitr and markdown to publish results)</a></li>
+									<li><a name="Course5.2" href="http://rpubs.com/mahdsip/379902">Course 5 - Assignment 2 (Using RPubs for publications)</a></li>
+									<li><a name="Course6" href="../Statistical_Inference_Course_Notes.html"><b>Course 6 Statistical Inference</b></a></li>
+									<p style="margin-bottom: 0cm; line-height: 100%;">Main concepts in statistics and probability for hypothesis testing and analytical interpretation.</p>
+									<li><a name="Course6.1" href="datascience/Simultion_Example.html">Course 6 - Assignment 1 (Sample vs. theoretical population for exponential distribution)</a></li>
+									<li><a name="Course6.2" href="datascience/Basic_Inferential_Data.html">Course 6 - Assignment 2 (Hypothesis testing for tooth growth supplements)</a></li>
+									<li><a name="Course7" href="../Regression_Models_Course_Notes.html"><b>Course 7 Regression Models</b></a></li>
+									<p style="margin-bottom: 0cm; line-height: 100%;">The most common GLM models: linear, binomial and Poisson.</p>
+								</ul>
 							</section>
 						</div>
 					<!-- /Content -->
 
 				</div>
-
 			</div>
 		</div>
-	<!-- Main --><!-- Footer -->
+	<!-- Main -->
+
+	<!-- Footer -->
 		<div id="footer">
 			<div class="container">
 				<div class="row">
@@ -189,7 +212,6 @@
 				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
 			</div>
 		</div>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134684500-1"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];

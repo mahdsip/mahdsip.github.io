@@ -6,10 +6,10 @@
 -->
 <html>
 	<head>
-		<title>Machine Learning - Blog de Miguel Angel Huerta</title>
+		<title>Machine Learning & IA - Blog de Miguel Angel Huerta</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
+		<meta name="description" content="Resumen del conocimiento de Miguel Angel Huerta en machine learning aplicado, datos sanitarios, modelos supervisados y no supervisados, y flujo completo de analitica." />
+		<meta name="keywords" content="machine learning, IA, data science, analytics, R, Weka, FHIR, salud" />
 		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 		<!--[if lte IE 8]><script src="../js/html5shiv.js"></script><![endif]-->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -54,19 +54,93 @@
 	<!-- Main -->
 		<div id="main">
 			<div class="container">
-				<header>
-					<h2>Próximamente</h2>
-					<span class="byline">Esta sección estará disponible pronto</span>
-				</header>
 				<div class="row">
-					<div class="12u">
-						<section>
-							<p>Estamos trabajando en nuevo contenido para esta sección. Vuelve pronto para ver las actualizaciones.</p>
-							<a href="index.html" class="button">Volver a la categoría</a>
-							<a href="../index.html" class="button">Ir a la página principal</a>
-						</section>
-					</div>
+
+					<!-- Sidebar -->
+						<div id="sidebar" class="4u">
+							<section>
+								<header>
+									<h2>Ruta IA & Data</h2>
+								</header>
+								<ul class="default">
+									<li><a href="index.html">Vision general</a></li>
+									<li><a href="data.html">Data y reporting</a></li>
+									<li><a href="data-science.html">Data Science</a></li>
+									<li><a href="estilos.html">Software y arquitectura</a></li>
+									<li><a href="https://github.com/mahdsip/DataScience">Repositorio DataScience</a></li>
+								</ul>
+							</section>
+							<section>
+								<header>
+									<h2>Herramientas</h2>
+								</header>
+								<ul class="default">
+									<li>R para analisis, limpieza y modelado estadistico</li>
+									<li>Weka para clasificacion y experimentacion</li>
+									<li>dplyr y tidyr para preparar datasets</li>
+									<li>ggplot2 para exploracion y comunicacion visual</li>
+									<li>knitr y markdown para analisis reproducible</li>
+									<li>SQL, JDBC, ODBC y FHIR para integrar fuentes</li>
+								</ul>
+							</section>
+						</div>
+					<!-- Sidebar -->
+
+					<!-- Content -->
+						<div id="content" class="8u skel-cell-important">
+							<section>
+								<header>
+									<h2>Machine Learning & IA aplicada</h2>
+									<span class="byline">Modelos utiles cuando el dato, el contexto y la evaluacion estan bien resueltos</span>
+								</header>
+								<p><a href="#" class="image full"><img src="../images/data/sem1.jpeg" alt=""></a></p>
+								<p>Entiendo el machine learning como una capa avanzada dentro de una cadena mayor: primero hay que capturar bien los datos, limpiarlos, entender su significado y construir una base analitica fiable. Solo despues tiene sentido entrenar modelos y esperar que aporten valor real.</p>
+								<p>Mi interes en este campo nace tanto de la formacion academica como de la practica profesional trabajando con explotacion de datos medicos. Por eso esta pagina no se centra en hype, sino en aquello que realmente marca la diferencia: calidad del dato, interpretacion del resultado, reproducibilidad y utilidad para la toma de decisiones.</p>
+
+								<p style="margin-bottom: 0cm; line-height: 100%;"><b>Base de conocimiento</b></p>
+								<ul>
+									<li style="margin-bottom: 0cm; line-height: 100%;">Modelos supervisados para clasificacion y regresion, apoyados en conceptos de inferencia estadistica y validacion.</li>
+									<li style="margin-bottom: 0cm; line-height: 100%;">Modelos no supervisados para descubrir estructura en los datos, especialmente tareas de clustering y profiling.</li>
+									<li style="margin-bottom: 0cm; line-height: 100%;">Importancia de definir bien la variable objetivo, evitar sesgos y revisar si el modelo es interpretable y accionable.</li>
+									<li style="margin-bottom: 0cm; line-height: 100%;">Uso de datos historicos para aprender patrones y convertir informacion en conocimiento reutilizable.</li>
+								</ul>
+
+								<p style="margin-bottom: 0cm; line-height: 100%;"><b>Algoritmos y enfoques con los que he trabajado o estudiado</b></p>
+								<ul>
+									<li style="margin-bottom: 0cm; line-height: 100%;">Arboles de decision y random forests para problemas de clasificacion.</li>
+									<li style="margin-bottom: 0cm; line-height: 100%;">Support Vector Machines y boosting como tecnicas de prediccion supervisada.</li>
+									<li style="margin-bottom: 0cm; line-height: 100%;">Modelos lineales, binomiales y de Poisson como parte de la base estadistica aplicada.</li>
+									<li style="margin-bottom: 0cm; line-height: 100%;">Clustering y profiling para segmentacion y deteccion de comportamientos.</li>
+									<li style="margin-bottom: 0cm; line-height: 100%;">Redes neuronales a nivel conceptual dentro del conjunto de tecnicas supervisadas.</li>
+								</ul>
+
+								<p style="margin-bottom: 0cm; line-height: 100%;"><b>Lo que considero imprescindible antes de modelar</b></p>
+								<ul>
+									<li style="margin-bottom: 0cm; line-height: 100%;">Un dataset limpio y documentado, con trazabilidad desde la fuente original.</li>
+									<li style="margin-bottom: 0cm; line-height: 100%;">Un analisis exploratorio que permita detectar outliers, relaciones y problemas de calidad.</li>
+									<li style="margin-bottom: 0cm; line-height: 100%;">Criterios de evaluacion ligados al problema real, no solo a una metrica aislada.</li>
+									<li style="margin-bottom: 0cm; line-height: 100%;">Capacidad para explicar por que el modelo es util dentro del proceso de negocio o clinico.</li>
+								</ul>
+
+								<p style="margin-bottom: 0cm; line-height: 100%;"><b>Material relacionado ya publicado</b></p>
+								<ul class="default">
+									<li><a href="data.html">Data</a>: contexto de reporting, analitica descriptiva y data mining.</li>
+									<li><a href="data-science.html">Data Science & Machine Learning</a>: ruta completa de cursos, practicas y notas en R.</li>
+									<li><a href="datascience/Curso_6_Statistical_InferenceCopy.html">Inferencia estadistica</a>: base para evaluar resultados con criterio.</li>
+									<li><a href="datascience/Curso_7_Regression_Models.html">Modelos de regresion</a>: trabajo con GLM lineales, binomiales y de Poisson.</li>
+									<li><a href="datascience/Extra3_FHIR.html">FHIR</a>: integracion de datos sanitarios como paso previo a cualquier analitica avanzada.</li>
+									<li><a href="https://mahdsip.shinyapps.io/HospitalQualityUS/">Hospital Quality App</a>: ejemplo de publicacion de resultados.</li>
+								</ul>
+
+								<p>Para mi, la mejor IA aplicada no es la que parece mas sofisticada, sino la que resuelve un problema real con datos entendibles, una evaluacion honesta y una integracion razonable en el flujo de trabajo.</p>
+								<a href="data-science.html" class="button">Ver Data Science</a>
+								<a href="https://github.com/mahdsip/DataScience" class="button">Ir a GitHub</a>
+							</section>
+						</div>
+					<!-- /Content -->
+
 				</div>
+
 			</div>
 		</div>
 	<!-- Main -->
