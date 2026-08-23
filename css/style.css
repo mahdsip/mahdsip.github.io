@@ -204,6 +204,12 @@
 				object-fit: cover;
 				object-position: center;
 			}
+
+			.image.full.natural img
+			{
+				height: auto;
+				object-fit: unset;
+			}
 			
 			.image.left
 			{
